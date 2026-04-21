@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/webfonts/IRANSansWeb_UltraLight_FaNum.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/IRANSansWeb_Light_FaNum.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/IRANSansWeb_FaNum.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/IRANSansWeb_Medium_FaNum.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/IRANSansWeb_Bold_FaNum.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Iran1";
+  src: url("../styles/webfonts/IRANSansWeb_Black_FaNum.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=base.css.map */
