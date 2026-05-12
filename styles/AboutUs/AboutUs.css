@@ -796,4 +796,452 @@ textarea:not([rows]) {
     font-size: 20px;
     line-height: 30px;
   }
-}/*# sourceMappingURL=base.css.map */
+}
+/* ================================
+   ROOT VARIABLES
+================================ */
+:root {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --primary-500: #088bcc;
+  --primary-700: #066899;
+  --shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   CONTAINER (GLOBAL)
+================================ */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ================================
+   HEADER
+================================ */
+.header {
+  position: relative;
+}
+.header__top {
+  background: #fff;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 8px 0;
+}
+.header__top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contact-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--gray-600);
+}
+.header__top-nav {
+  display: flex;
+  gap: 12px;
+}
+.header__top-nav a {
+  color: var(--gray-500);
+  font-size: 14px;
+}
+.header__main {
+  padding: 16px 0;
+}
+.header__main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  gap: 24px;
+}
+.header__nav a {
+  color: var(--gray-700);
+  font-weight: 500;
+  font-size: 15px;
+}
+.header__logo img {
+  height: 42px;
+}
+
+.header-background {
+  z-index: 10000;
+  position: relative;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+.header-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  z-index: -1;
+}
+
+/* ================================
+   HERO
+================================ */
+.hero {
+  padding: 37px 0;
+  text-align: center;
+  background-image: url(../../images/Frame-aboutUs.svg);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  content: " ";
+  background: linear-gradient(90deg, #ffffff 0%, rgba(239, 244, 249, 0.6) 20%, transparent 50%, rgba(239, 244, 249, 0.6) 80%, #ffffff 100%);
+  height: 100%;
+  z-index: 1;
+}
+.hero--about {
+  background: url("../public/About-Us-Page@3x.png") center/cover no-repeat;
+  color: #fff;
+}
+.hero__subtitle {
+  font-size: 14px;
+  color: var(--gray-200);
+}
+.hero__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+.hero__description {
+  font-size: 16px;
+  color: var(--gray-300);
+}
+
+.pricing-header {
+  padding: 140px 0;
+}
+.pricing-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.pricing-header__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+.pricing-header__breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.pricing-header__breadcrumb-item--current .pricing-header__breadcrumb-text {
+  color: #066899;
+}
+.pricing-header__breadcrumb-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9ca3af;
+}
+.pricing-header__breadcrumb-separator {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+}
+.pricing-header__title {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #374151;
+  text-align: center;
+}
+.pricing-header__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* ================================
+   SECTION HEADER (Reusable)
+================================ */
+.section-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.section-header__badge {
+  font-size: 13px;
+  color: var(--primary-700);
+}
+.section-header__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.section-header__description {
+  font-size: 14px;
+  color: rgb(6, 104, 153) !important;
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: right;
+  color: #066899;
+}
+.section-header__text {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: justify;
+  color: #6b7280;
+}
+.section-header--right {
+  text-align: right;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about-section {
+  padding: 80px 0;
+}
+.about-section__wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.about-section__content {
+  flex: 1;
+}
+.about-section__text p {
+  margin-bottom: 1px;
+  line-height: 1.9;
+  color: var(--gray-600);
+}
+.about-section__image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ================================
+   CLIENTS
+================================ */
+.clients {
+  padding: 40px 0;
+  height: 88px;
+  overflow: hidden;
+}
+.clients .container {
+  max-width: unset;
+}
+.clients__logos {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.clients__logos img {
+  height: 40px;
+  width: auto;
+  opacity: 0.8;
+}
+
+/* ================================
+   VISION
+================================ */
+.vision {
+  padding: 80px 0;
+}
+.vision__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.vision-card {
+  border: 1px solid rgba(8, 139, 204, 0.3);
+  background: rgba(8, 139, 204, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+}
+.vision-card__header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.vision-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-700);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: right;
+  color: #088bcc;
+}
+.vision-card__text {
+  color: var(--gray-600);
+  font-size: 14px;
+  line-height: 1.8;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: justify;
+  color: #6b7280;
+}
+
+/* ================================
+   TEAM
+================================ */
+.team {
+  padding: 80px 0;
+}
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.team-card__image img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-card__content {
+  padding: 16px;
+}
+.team-card__role {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--gray-500);
+}
+.team-card__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.team-card__description {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-bottom: 12px;
+}
+.team-card__socials {
+  display: flex;
+  gap: 12px;
+}
+
+/* ================================
+   WHY US
+================================ */
+.why-us {
+  padding: 80px 0;
+}
+.why-us__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.why-card {
+  background: var(--primary-700);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.why-card__title {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.why-card__text {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ================================
+   ACHIEVEMENTS
+================================ */
+.achievements {
+  padding: 80px 0;
+}
+.achievements__wrapper {
+  display: flex;
+  gap: 40px;
+}
+.achievements__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  flex: 1;
+}
+.achievements__content {
+  flex: 1;
+}
+
+.achievement-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+.achievement-card__number {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-700);
+}
+.achievement-card__label {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+/* ================================
+   CERTIFICATES
+================================ */
+.certificates {
+  padding: 80px 0;
+}
+.certificates__grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.certificates__grid img {
+  width: 220px;
+  border-radius: 12px;
+}/*# sourceMappingURL=AboutUs.css.map */

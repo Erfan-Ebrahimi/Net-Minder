@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     if (!ticking) {
       window.requestAnimationFrame(function () {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 50) {
           header.classList.add("header__scrolled");
@@ -121,15 +122,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // 5. BENEFITS SWIPER - اصلاح شده
   // ====================================================================
 
-  if (typeof Swiper !== 'undefined') {
+  if (typeof Swiper !== "undefined") {
     const benefitsSwiperEl = document.querySelector(".benefits__swiper");
-    
+
     if (benefitsSwiperEl) {
       const benefitsSwiper = new Swiper(".benefits__swiper", {
         effect: "cards",
-        grabCursor: true
+        grabCursor: true,
       });
-      
+
       console.log("✅ Benefits Swiper initialized successfully");
     } else {
       console.warn("⚠️ Benefits swiper element not found");
@@ -139,33 +140,62 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ====================================================================
-// 6. PRODUCTS SWIPER
-// ====================================================================
+  // 6. PRODUCTS SWIPER
+  // ====================================================================
 
-if (typeof Swiper !== 'undefined') {
-  const productsSwiperEl = document.querySelector(".products-slider");
-  
-  if (productsSwiperEl) {
-    const productsSwiper = new Swiper(".products-slider", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: ".products__nav-arrow--right",
-        prevEl: ".products__nav-arrow--left",
-      },
-      on: {
-        init: function () {
-          console.log("✅ Products Swiper initialized");
+  if (typeof Swiper !== "undefined") {
+    const productsSwiperEl = document.querySelector(".clients-slider");
+
+    if (productsSwiperEl) {
+      const productsSwiper = new Swiper(".clients-slider", {
+        slidesPerView: 8,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".products__nav-arrow--right",
+          prevEl: ".products__nav-arrow--left",
         },
-      },
-    });
+        on: {
+          init: function () {
+            console.log("✅ Products Swiper initialized");
+          },
+        },
+      });
+    } else {
+      console.warn("⚠️ Products swiper element not found");
+    }
   } else {
-    console.warn("⚠️ Products swiper element not found");
+    console.error("❌ Swiper library not loaded");
   }
-} else {
-  console.error("❌ Swiper library not loaded");
-}
+
+  // ====================================================================
+  // 6. PRODUCTS SWIPER
+  // ====================================================================
+
+  if (typeof Swiper !== "undefined") {
+    const productsSwiperEl = document.querySelector(".teams-slider");
+
+    if (productsSwiperEl) {
+      const productsSwiper = new Swiper(".teams-slider", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".products__nav-arrow--right",
+          prevEl: ".products__nav-arrow--left",
+        },
+        on: {
+          init: function () {
+            console.log("✅ Products Swiper initialized");
+          },
+        },
+      });
+    } else {
+      console.warn("⚠️ Products swiper element not found");
+    }
+  } else {
+    console.error("❌ Swiper library not loaded");
+  }
   // ====================================================================
   // 10. FAQ ACCORDION
   // ====================================================================
@@ -173,12 +203,12 @@ if (typeof Swiper !== 'undefined') {
   const faqItems = document.querySelectorAll(".faq__item");
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq__question");
-    
+
     if (!question) return;
 
-    question.addEventListener("click", function() {
+    question.addEventListener("click", function () {
       console.log("FAQ item clicked!");
-      
+
       faqItems.forEach((otherItem) => {
         if (otherItem !== item) {
           otherItem.classList.remove("faq__item--active");
