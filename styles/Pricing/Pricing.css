@@ -925,8 +925,6 @@ textarea:not([rows]) {
 }
 @media (max-width: 768px) {
   .stats__card {
-    left: 50%;
-    transform: translateX(-50%);
     top: -30px;
     gap: 16px;
     padding: 16px 20px;
@@ -1408,12 +1406,27 @@ textarea:not([rows]) {
   direction: rtl;
   margin-top: 20px;
 }
+@media (max-width: 702px) {
+  .userForm .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 489px) {
+  .userForm .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .userForm .feature-item {
   display: flex;
   align-items: center;
   font-size: 16px;
   cursor: pointer;
   gap: 10px;
+}
+@media (max-width: 527px) {
+  .userForm .feature-item {
+    font-size: 14px;
+  }
 }
 .userForm .feature-item input[type=checkbox] {
   width: 18px;

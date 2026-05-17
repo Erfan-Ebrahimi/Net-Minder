@@ -873,6 +873,11 @@ textarea:not([rows]) {
   font-weight: 500;
   font-size: 15px;
 }
+@media (max-width: 769px) {
+  .header__nav {
+    display: none;
+  }
+}
 .header__logo img {
   height: 42px;
 }
@@ -1035,6 +1040,11 @@ textarea:not([rows]) {
   gap: 40px;
   align-items: center;
 }
+@media (max-width: 1116px) {
+  .about-section__wrapper {
+    display: block;
+  }
+}
 .about-section__content {
   flex: 1;
 }
@@ -1082,6 +1092,11 @@ textarea:not([rows]) {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+@media (max-width: 768px) {
+  .vision__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .vision-card {
   border: 1px solid rgba(8, 139, 204, 0.3);
@@ -1128,6 +1143,16 @@ textarea:not([rows]) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+@media (max-width: 868px) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .team-card {
@@ -1177,6 +1202,16 @@ textarea:not([rows]) {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
+@media (max-width: 698px) {
+  .why-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .why-us__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .why-card {
   background: var(--primary-700);
@@ -1203,6 +1238,11 @@ textarea:not([rows]) {
 .achievements__wrapper {
   display: flex;
   gap: 40px;
+}
+@media (max-width: 678px) {
+  .achievements__wrapper {
+    display: block;
+  }
 }
 .achievements__stats {
   display: grid;
