@@ -89,6 +89,9 @@
     font-weight: $font-weight-semibold;
     font-size: $font-size-h4;
     line-height: $line-height-h4;
+    @media(max-width:398px){
+        font-size:$font-size-h5;
+    }
   }
 
   &__title {
@@ -98,6 +101,7 @@
     color: $gray-900;
     margin: 0;
     max-width: 771px;
+ 
   }
 
   &__description {
@@ -111,9 +115,15 @@
     display: flex;
     gap: $spacing-md;
     justify-content: flex-start;
+     @media(max-width:398px){
+      justify-content: center;
+      }
 
     button {
       width: 180px;
+      @media(max-width:398px){
+        width: 160px;
+      }
     }
   }
 }
@@ -338,11 +348,14 @@
   }
 
   &__nav-arrows {
-    position: absolute;
+    // position: absolute;
+  position: relative;
     left: 0;
     right: 0;
+    
     top: 93%;
-    transform: translateY(-50%);
+    transform: translate( 4%,-50%);
+      // transform: translateX(40%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,6 +708,7 @@
     font-size: $font-size-h5;
     line-height: $line-height-compact;
     font-weight: $font-weight-medium;
+  
   }
 
   &__step-content p {
@@ -1330,7 +1344,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .hero {
     &__text {
       gap: $spacing-2xl;
@@ -1344,7 +1358,7 @@
     }
 
     &__title {
-      font-size: $font-size-h3 + 2;
+      font-size: $font-size-h4 + 2;
       line-height: 36px;
     }
   }
@@ -1354,3 +1368,9 @@
     line-height: $line-height-h4;
   }
 }
+  // @media(max-width:423px){
+  //   .how-it-works__step-number{
+  //      width: 28px;
+  //      height: 28px;
+  //   }  
+  //   }

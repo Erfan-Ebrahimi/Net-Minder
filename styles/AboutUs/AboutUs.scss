@@ -379,17 +379,17 @@
 .team {
   padding: 80px 0;
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    @media (max-width: 868px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 550px) {
-      grid-template-columns: 1fr;
-    }
-  }
+  // &__grid {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   gap: 24px;
+  //   @media (max-width: 868px) {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+  //   @media (max-width: 550px) {
+  //     grid-template-columns: 1fr;
+  //   }
+  // }
 }
 
 .team-card {
@@ -530,4 +530,10 @@
       border-radius: 12px;
     }
   }
+}
+.teams-slider .swiper-slide {
+  width: 250px !important;  
+}
+.clients-logo .swiper-slide  {
+  width:100px !important;  
 }
