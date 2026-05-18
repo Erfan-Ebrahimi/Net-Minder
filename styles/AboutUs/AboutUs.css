@@ -942,7 +942,7 @@ textarea:not([rows]) {
 }
 
 .pricing-header {
-  padding: 140px 0;
+  padding: 70px 0;
 }
 .pricing-header .container {
   display: flex;
@@ -1139,21 +1139,6 @@ textarea:not([rows]) {
 .team {
   padding: 80px 0;
 }
-.team__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 868px) {
-  .team__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 550px) {
-  .team__grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .team-card {
   background: #fff;
@@ -1284,4 +1269,12 @@ textarea:not([rows]) {
 .certificates__grid img {
   width: 220px;
   border-radius: 12px;
+}
+
+.teams-slider .swiper-slide {
+  width: 250px !important;
+}
+
+.clients-logo .swiper-slide {
+  width: 100px !important;
 }/*# sourceMappingURL=AboutUs.css.map */

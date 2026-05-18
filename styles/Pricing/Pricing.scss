@@ -126,6 +126,10 @@
 
 .stats {
   margin-top: $stats-margin-top;
+  padding-bottom: $section-padding-large;
+  @media(max-width:771px){
+      padding-bottom:$section-padding;
+  }
 
   .container {
     position: relative;
@@ -1508,3 +1512,4 @@
 //   color: #fff;
 //   text-align: right;
 // }
+

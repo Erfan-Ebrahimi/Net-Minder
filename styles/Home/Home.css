@@ -865,6 +865,11 @@ textarea:not([rows]) {
   font-size: 20px;
   line-height: 30px;
 }
+@media (max-width: 398px) {
+  .hero__subtitle {
+    font-size: 18px;
+  }
+}
 .hero__title {
   font-size: 48px;
   line-height: 72px;
@@ -884,8 +889,18 @@ textarea:not([rows]) {
   gap: 12px;
   justify-content: flex-start;
 }
+@media (max-width: 398px) {
+  .hero__buttons {
+    justify-content: center;
+  }
+}
 .hero__buttons button {
   width: 180px;
+}
+@media (max-width: 398px) {
+  .hero__buttons button {
+    width: 160px;
+  }
 }
 
 .stats {
@@ -995,7 +1010,7 @@ textarea:not([rows]) {
 }
 
 .products {
-  padding: 140px 0;
+  padding: 70px 0;
   margin-top: 140px;
 }
 .products__showcase {
@@ -1086,11 +1101,11 @@ textarea:not([rows]) {
   text-align: justify;
 }
 .products__nav-arrows {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 93%;
-  transform: translateY(-50%);
+  transform: translate(4%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1139,7 +1154,7 @@ textarea:not([rows]) {
 }
 
 .video-section {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .video-section__grid {
   display: flex;
@@ -1205,7 +1220,7 @@ textarea:not([rows]) {
 }
 
 .benefits {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .benefits__content {
   display: flex;
@@ -1358,7 +1373,7 @@ textarea:not([rows]) {
 }
 
 .how-it-works {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .how-it-works__steps {
   position: relative;
@@ -1481,7 +1496,7 @@ textarea:not([rows]) {
 }
 
 .cta-banner {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .cta-banner__wrapper {
   position: relative;
@@ -1623,7 +1638,7 @@ textarea:not([rows]) {
 }
 
 .technical-features {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .technical-features__grid {
   display: grid;
@@ -1684,7 +1699,7 @@ textarea:not([rows]) {
 }
 
 .pricing {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .pricing__grid {
   display: flex;
@@ -1795,7 +1810,7 @@ textarea:not([rows]) {
 }
 
 .blog {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .blog__grid {
   display: grid;
@@ -1854,7 +1869,7 @@ textarea:not([rows]) {
 }
 
 .faq {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .faq__container {
   max-width: 1060px;
@@ -1967,7 +1982,7 @@ textarea:not([rows]) {
     padding-block: 40px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .hero__text {
     gap: 32px;
   }
@@ -1979,7 +1994,7 @@ textarea:not([rows]) {
     padding-inline: 16px;
   }
   .hero__title {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 36px;
   }
   .section-header h2 {
