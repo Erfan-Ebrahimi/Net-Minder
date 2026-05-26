@@ -896,6 +896,12 @@ textarea:not([rows]) {
 
 .stats {
   margin-top: -100px;
+  padding-bottom: 140px;
+}
+@media (max-width: 771px) {
+  .stats {
+    padding-bottom: 70px;
+  }
 }
 .stats .container {
   position: relative;
@@ -1000,7 +1006,7 @@ textarea:not([rows]) {
 }
 
 .pricing-header {
-  padding: 140px 0;
+  padding: 70px 0;
 }
 .pricing-header .container {
   display: flex;
@@ -1050,7 +1056,7 @@ textarea:not([rows]) {
 }
 
 .pricing {
-  padding-bottom: 140px;
+  padding-bottom: 70px;
 }
 .pricing__grid {
   display: grid;
@@ -1159,7 +1165,7 @@ textarea:not([rows]) {
 }
 
 .pricing-compare {
-  padding: 140px 0;
+  padding: 70px 0;
 }
 .pricing-compare__title {
   font-size: 24px;
@@ -1215,7 +1221,7 @@ textarea:not([rows]) {
 }
 
 .userForm {
-  padding-bottom: 140px;
+  padding-bottom: 70px;
 }
 .userForm .search-box__wrapper {
   width: 100%;
@@ -1435,7 +1441,7 @@ textarea:not([rows]) {
 }
 
 .faq {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .faq__container {
   max-width: 1060px;
