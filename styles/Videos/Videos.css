@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Iran1";
   src: url("../styles/webfonts/webfonts/IRANSansWeb_UltraLight_FaNum.woff2") format("woff2");
@@ -830,76 +829,13 @@ textarea:not([rows]) {
    HEADER
 ================================ */
 .header {
-  position: relative;
-}
-.header__top {
-  background: #fff;
-  border-bottom: 1px solid var(--gray-200);
-  padding: 8px 0;
-}
-.header__top-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__contact-info {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  font-size: 14px;
-  color: var(--gray-600);
-}
-.header__top-nav {
-  display: flex;
-  gap: 12px;
-}
-.header__top-nav a {
-  color: var(--gray-500);
-  font-size: 14px;
-}
-.header__main {
-  padding: 16px 0;
-}
-.header__main-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__nav {
-  display: flex;
-  gap: 24px;
-}
-.header__nav a {
-  color: var(--gray-700);
-  font-weight: 500;
-  font-size: 15px;
-}
-@media (max-width: 769px) {
-  .header__nav {
-    display: none;
-  }
-}
-.header__logo img {
-  height: 42px;
-}
-
-.header-background {
-  z-index: 10000;
-  position: relative;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  background-size: cover;
-}
-.header-background::after {
-  content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  z-index: 1000;
   background: none;
-  z-index: -1;
+  transition: all 0.3s ease-in-out;
 }
 
 /* ================================
@@ -908,7 +844,6 @@ textarea:not([rows]) {
 .hero {
   padding: 37px 0;
   text-align: center;
-  background-image: url(../../images/bg-line.svg);
   background-repeat: no-repeat;
   background-clip: border-box;
   background-size: cover;
@@ -920,7 +855,6 @@ textarea:not([rows]) {
   top: 0;
   right: 0;
   content: " ";
-  background: linear-gradient(90deg, #ffffff 0%, rgba(239, 244, 249, 0.6) 20%, transparent 50%, rgba(239, 244, 249, 0.6) 80%, #ffffff 100%);
   height: 100%;
   z-index: 1;
 }
@@ -992,15 +926,13 @@ textarea:not([rows]) {
   text-align: center;
 }
 
-/* ================================
-   ARTICLES
-================================ */
 .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   opacity: 1;
   margin: 6% auto;
+  margin-top: 0px;
 }
 .articles .container {
   width: 100%;
@@ -1079,7 +1011,7 @@ textarea:not([rows]) {
 ================================ */
 .articles {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* تغییر کلیدی */
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
   margin: 6% auto;
 }
@@ -1093,24 +1025,23 @@ textarea:not([rows]) {
   gap: 24px;
   border-radius: 16px;
   padding: 16px;
-  width: 100%; /* حذف عرض ثابت */
+  width: 100%;
   box-sizing: border-box;
 }
 
 .articles .article__btn {
   display: flex;
   border-top: 1px solid #e5e7eb;
-  width: 100%; /* تغییر از 376px به 100% */
+  width: 100%;
   justify-content: space-between;
   padding-top: 12px;
-  flex-wrap: wrap; /* برای موبایل‌های خیلی کوچک */
+  flex-wrap: wrap;
   gap: 12px;
 }
 
-/* اضافه کردن مدیا کوئری برای موبایل */
 @media (max-width: 768px) {
   .articles {
-    grid-template-columns: 1fr; /* یک ستون در موبایل */
+    grid-template-columns: 1fr;
     gap: 16px;
     margin: 10% auto;
   }
@@ -1123,6 +1054,42 @@ textarea:not([rows]) {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .articles {
-    grid-template-columns: repeat(2, 1fr); /* دو ستون در تبلت */
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+.header__top {
+  border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
+}
+
+.header-background {
+  z-index: 10000;
+  position: relative;
+  background-image: url(../../images/price-bg-hero.svg);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+.header-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__main {
+  padding: 16px 0;
 }/*# sourceMappingURL=Videos.css.map */
