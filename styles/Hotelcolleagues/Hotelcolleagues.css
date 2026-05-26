@@ -945,7 +945,7 @@ textarea:not([rows]) {
 }
 
 .pricing-header {
-  padding: 140px 0;
+  padding: 70px 0;
 }
 .pricing-header .container {
   display: flex;
@@ -1745,7 +1745,7 @@ textarea:not([rows]) {
 }
 
 .cta-banner {
-  padding: 0 0 140px 0;
+  padding: 0 0 70px 0;
 }
 .cta-banner__wrapper {
   position: relative;
