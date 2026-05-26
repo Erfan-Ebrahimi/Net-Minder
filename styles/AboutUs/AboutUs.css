@@ -906,6 +906,7 @@ textarea:not([rows]) {
 ================================ */
 .hero {
   padding: 37px 0;
+  margin-top: 200px;
   text-align: center;
   background-image: url(../../images/Frame-aboutUs.svg);
   background-repeat: no-repeat;
@@ -1284,4 +1285,14 @@ textarea:not([rows]) {
 .certificates__grid img {
   width: 220px;
   border-radius: 12px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: none;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=AboutUs.css.map */
