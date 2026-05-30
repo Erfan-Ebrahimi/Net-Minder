@@ -461,11 +461,17 @@
 
         &__seconed {
           // color: $white-dark;
-          color: rgba(255, 255, 255, 0.6980392157);
-
-          font-size: 18px;
+          // color: rgba(255, 255, 255, 0.6980392157);
+          // font-size: 18px;
+          // font-weight: 600;
+          // line-height: 150%;
+        color: #FFF;
+          font-family: IRANSansXFaNum;
           font-weight: 600;
+          font-size: 20px;
           line-height: 150%;
+          letter-spacing: 0%;
+          text-align: right;
 
           @media (max-width: 768px) {
             font-size: 16px;

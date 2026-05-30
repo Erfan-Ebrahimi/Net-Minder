@@ -1209,10 +1209,13 @@ textarea:not([rows]) {
 .why-card__title {
   margin-top: 10px;
   font-size: 18px;
+  text-align: right;
+  padding-bottom: 8px;
 }
 .why-card__text {
   font-size: 13px;
   opacity: 0.8;
+  text-align: right;
 }
 
 /* ================================
@@ -1278,4 +1281,161 @@ textarea:not([rows]) {
 
 .clients-logo .swiper-slide {
   width: 100px !important;
+}
+
+.arrow__swiper,
+.arrow__right {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.arrow__swiper:hover,
+.arrow__right:hover {
+  opacity: 0.8;
+}
+
+.arrow__swiper {
+  left: -20px;
+}
+@media (max-width: 1200px) {
+  .arrow__swiper {
+    left: 10px;
+  }
+}
+.arrow__swiper--left {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .arrow__swiper--left {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.arrow__right {
+  right: -20px;
+}
+@media (max-width: 1200px) {
+  .arrow__right {
+    right: 10px;
+  }
+}
+.arrow__right--right {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .arrow__right--right {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.partners-pagination {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.partners-pagination .swiper-pagination-bullet {
+  background: var(--gray-400);
+  opacity: 0.7;
+}
+.partners-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-500);
+  opacity: 1;
+}
+
+.partners__column--logo {
+  width: 93%;
+}
+
+.partners-prev,
+.partners-next {
+  display: flex;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #46bdf8;
+  background: none;
+  border-radius: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  align-items: center;
+  justify-content: center;
+}
+.partners-prev:hover,
+.partners-next:hover {
+  background: #03344c;
+}
+
+.partners-footer {
+  margin: 0 auto 140px auto;
+}
+
+.btns {
+  position: relative;
+  margin-top: 10px;
+}
+
+.arrow__right {
+  position: absolute;
+  right: 47%;
+}
+
+.arrow__swiper {
+  position: absolute;
+  left: 47%;
+}
+
+.team-card__name {
+  color: #232C39;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.group-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__main {
+  padding: 16px 0;
+}
+
+.header-background {
+  z-index: 10000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+.header-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 100%);
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: none;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=AboutUs.css.map */
