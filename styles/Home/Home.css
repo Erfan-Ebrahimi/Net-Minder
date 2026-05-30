@@ -845,7 +845,6 @@ textarea:not([rows]) {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-block: 214px;
   justify-content: flex-start;
 }
 .hero__text {
@@ -2001,4 +2000,7 @@ textarea:not([rows]) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+.header__top {
+  border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
 }/*# sourceMappingURL=Home.css.map */

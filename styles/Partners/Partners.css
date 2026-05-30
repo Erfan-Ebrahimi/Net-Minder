@@ -834,7 +834,6 @@ textarea:not([rows]) {
 .header__top {
   background: none;
   border-bottom: 1px solid var(--gray-200);
-  padding: 8px 0;
 }
 .header__top-content {
   display: flex;
@@ -879,10 +878,6 @@ textarea:not([rows]) {
     display: none;
   }
 }
-.header__logo img {
-  height: 42px;
-}
-
 .header-background {
   z-index: 10000;
   position: relative;

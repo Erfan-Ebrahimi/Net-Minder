@@ -82,7 +82,7 @@
   }
 
   &__logo img {
-    height: 42px;
+    // height: 42px;
   }
 }
 .header {
@@ -1157,4 +1157,7 @@
       font-size: 16px;
     }
   }
+}
+.header__top {
+  border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
 }

@@ -16,6 +16,8 @@
   --primary-500: #088bcc;
   --primary-700: #066899;
 
+  --achievements-bg:#088BCC14;
+--achievements-border:#088BCC66;
   --shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -37,9 +39,9 @@
   position: relative;
 
   &__top {
-    background: #fff;
+    // background: #fff;
     border-bottom: 1px solid var(--gray-200);
-    padding: 8px 0;
+    // padding: 8px 0;
   }
 
   &__top-content {
@@ -91,7 +93,7 @@
   }
 
   &__logo img {
-    height: 42px;
+    // height: 42px;
   }
 }
 
@@ -247,7 +249,7 @@
     font-size: 18px;
     line-height: 150%;
     text-align: right;
-    color: #066899;
+    color: var(--primary-700);
   }
 
   &__text {
@@ -440,8 +442,11 @@
 ================================ */
 .why-us {
   padding: 80px 0;
+ 
 
   &__grid {
+       background: var(--primary-700);
+    border-radius: 16px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -455,10 +460,10 @@
 }
 
 .why-card {
-  background: var(--primary-700);
+  // background: var(--primary-700);
   color: #fff;
   padding: 20px;
-  border-radius: 12px;
+  // border-radius: 12px;
   text-align: center;
 
   &__title {
@@ -484,6 +489,7 @@
   &__wrapper {
     display: flex;
     gap: 40px;
+    flex-direction: row-reverse;
     @media (max-width: 678px) {
       display: block;
     }
@@ -502,20 +508,22 @@
 }
 
 .achievement-card {
-  background: #fff;
+  border: 2px solid var(--achievements-border);
+  background-color: var(--achievements-bg);
   padding: 16px;
   border-radius: 12px;
   text-align: center;
 
   &__number {
-    font-size: 22px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--primary-700);
   }
 
   &__label {
-    font-size: 13px;
-    color: var(--gray-500);
+    font-size: 14px;
+  
+    color: var(--primary-700);
   }
 }
 
@@ -896,4 +904,9 @@ text-align: right;
 
 .arrow__right--right {
   transform: rotate(180deg);
+}
+.achievement-card{
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

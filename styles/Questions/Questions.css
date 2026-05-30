@@ -1240,4 +1240,8 @@ textarea:not([rows]) {
 
 .header__main {
   padding: 16px 0;
+}
+
+.header__top {
+  border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
 }/*# sourceMappingURL=Questions.css.map */

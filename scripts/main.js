@@ -22,10 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.addEventListener("click", function (event) {
-      if (
-        !hamburger.contains(event.target) &&
-        !mobileNav.contains(event.target)
-      ) {
+      if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
         hamburger.classList.remove("hamburger--active");
         mobileNav.classList.remove("mobile-nav--active");
       }
@@ -38,19 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
   // ====================================================================
   // 2. HEADER SCROLL EFFECT
   // ====================================================================
 
   const header = document.querySelector(".header");
-  const headerTop = document.querySelector(".header__top");
   let ticking = false;
 
   window.addEventListener("scroll", function () {
     if (!ticking) {
       window.requestAnimationFrame(function () {
-        const scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 50) {
           header.classList.add("header__scrolled");
@@ -93,33 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // ====================================================================
-  // 4. ACTIVE NAV LINK INDICATOR
-  // ====================================================================
-
-  const navLinks = document.querySelectorAll(".header__nav a");
-  window.addEventListener("scroll", function () {
-    let current = "";
-    const sections = document.querySelectorAll("section[id]");
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-
-      if (pageYOffset >= sectionTop - 100) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-  // ====================================================================
-  // 5. BENEFITS SWIPER - اصلاح شده
+  // 4. BENEFITS SWIPER (Card Effect)
   // ====================================================================
 
   if (typeof Swiper !== "undefined") {
@@ -140,24 +110,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ====================================================================
-  // 6. PRODUCTS SWIPER
+  // 5. PRODUCTS SWIPER - اصلاح شده ✅
   // ====================================================================
 
   if (typeof Swiper !== "undefined") {
-    const productsSwiperEl = document.querySelector(".clients-slider");
+    const productsSwiperEl = document.querySelector(".products-slider");
 
     if (productsSwiperEl) {
-      const productsSwiper = new Swiper(".clients-slider", {
-        slidesPerView: 8,
-        spaceBetween: 10,
+      const productsSwiper = new Swiper(".products-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
         loop: true,
         navigation: {
           nextEl: ".products__nav-arrow--right",
           prevEl: ".products__nav-arrow--left",
         },
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 1,
+          },
+        },
         on: {
           init: function () {
-            console.log("✅ Products Swiper initialized");
+            console.log("✅ Products Swiper initialized successfully");
           },
         },
       });
@@ -169,35 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ====================================================================
-  // 6. PRODUCTS SWIPER
-  // ====================================================================
-
-  if (typeof Swiper !== "undefined") {
-    const productsSwiperEl = document.querySelector(".teams-slider");
-
-    if (productsSwiperEl) {
-      const productsSwiper = new Swiper(".teams-slider", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        loop: true,
-        navigation: {
-          nextEl: ".products__nav-arrow--right",
-          prevEl: ".products__nav-arrow--left",
-        },
-        on: {
-          init: function () {
-            console.log("✅ Products Swiper initialized");
-          },
-        },
-      });
-    } else {
-      console.warn("⚠️ Products swiper element not found");
-    }
-  } else {
-    console.error("❌ Swiper library not loaded");
-  }
-  // ====================================================================
-  // 10. FAQ ACCORDION
+  // 6. FAQ ACCORDION
   // ====================================================================
 
   const faqItems = document.querySelectorAll(".faq__item");

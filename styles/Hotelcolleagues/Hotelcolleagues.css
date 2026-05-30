@@ -870,10 +870,6 @@ textarea:not([rows]) {
     display: none;
   }
 }
-.header__logo img {
-  height: 42px;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -1896,4 +1892,8 @@ textarea:not([rows]) {
     padding: 8px 30px;
     font-size: 16px;
   }
+}
+
+.header__top {
+  border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
 }/*# sourceMappingURL=Hotelcolleagues.css.map */
