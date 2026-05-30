@@ -1,728 +1,762 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هتل ها | نت‌مایندر</title>
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/Hotelcolleagues/Hotelcolleagues.css" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>هتل ها | نت‌مایندر</title>
-  <!-- Base Styles -->
-  <link rel="stylesheet" href="../styles/base.css" />
-  <link rel="stylesheet" href="../styles/Hotelcolleagues/Hotelcolleagues.css" />
-  <!-- Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <!-- Swiper -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <!-- ====================================================== -->
-  <!-- HEADER + HERO -->
-  <!-- ====================================================== -->
-  <div class="header-background">
-    <!-- Header -->
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-content">
-            <div class="header__contact-info">
-              <span>09131234567</span>
-              <img
-                src="https://static.codia.ai/image/2025-12-14/AtVYxB0Htn.png"
-                alt="phone"
-                class="header__phone-icon" />
-            </div>
-            <nav class="header__top-nav">
-              <a href="../Pages/Questions.html">سوالات متداول</a>
-              <span>|</span>
-              <a href="../Pages/AboutUs.html">درباره ما</a>
-              <span>|</span>
-              <a href="../Pages/Contactus.html">تماس با ما</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="header__main">
-        <div class="container">
-          <div class="header__main-content">
-            <button class="demo-btn">دریافت نسخه دمو</button>
-            <!-- همبرگر منو - فقط موبایل -->
-            <button class="hamburger" aria-label="منو">
-              <span class="hamburger__line"></span>
-              <span class="hamburger__line"></span>
-              <span class="hamburger__line"></span>
-            </button>
-
-            <nav class="header__nav">
-                <a href="../Pages/Educational-articles.html">پایگاه آموزش</a>
-                <a href="../Pages/Partners.html">شرکای تجاری</a>
-                <a href="../Pages/Hotelcolleagues.html">هتل‌ها</a>
-                <a href="../Pages/Pricing.html">تعرفه ها</a>
-                <a href="../Pages/Home.html">خانه</a>
+  <body>
+    <!-- ====================================================== -->
+    <!-- HEADER + HERO -->
+    <!-- ====================================================== -->
+    <div class="header-background">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-content">
+              <div class="header__contact-info">
+                <span>09131234567</span>
+                <img
+                  src="https://static.codia.ai/image/2025-12-14/AtVYxB0Htn.png"
+                  alt="phone"
+                  class="header__phone-icon" />
+              </div>
+              <nav class="header__top-nav">
+                <a href="#faq">سوالات متداول</a>
+                <span>|</span>
+                <a href="#about">درباره ما</a>
+                <span>|</span>
+                <a href="#contact">تماس با ما</a>
                 </nav>
-            <div class="header__logo">
-              <img
-                src="https://static.codia.ai/image/2025-12-14/T2ENy31yVs.png"
-                alt="نت‌مایندر" />
-            </div>
-          </div>
-        </div>
-      </div>
+                </div>
+                </div>
+                </div>
+                <div class="header__main">
+                  <div class="container">
+                    <div class="header__main-content">
+                      <button class="demo-btn">دریافت نسخه دمو</button>
+                      <!-- همبرگر منو - فقط موبایل -->
+                      <button class="hamburger" aria-label="منو">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                      </button>
 
-          <nav class="mobile-nav">
-        <a href="../Pages/Educational-articles.html">پایگاه آموزش</a>
-        <a href="../Pages/Partners.html">شرکای تجاری</a>
-        <a href="../Pages/Hotelcolleagues.html">هتل‌ها</a>
-        <a href="../Pages/Pricing.html">تعرفه ها</a>
-        <a href="../Pages/Home.html">خانه</a>
-        <hr />
-          <a href="../Pages/Contactus.html">تماس با ما</a>
-          <a href="../Pages/AboutUs.html">درباره ما</a>
-          <a href="../Pages/Questions.html">سوالات متداول</a>
+              <nav class="header__nav">
+                <a href="./pages/Pricing.html">پایگاه آموزش</a>
+                <a href="#partners">شرکای تجاری</a>
+                <a href="#hotels">هتل‌ها</a>
+                <a href="#pricing">تعرفه ها</a>
+                <a href="./pages/Home.html">خانه</a>
+                </nav>
+                <div class="header__logo">
+                  <img
+                    src="https://static.codia.ai/image/2025-12-14/T2ENy31yVs.png"
+                    alt="نت‌مایندر" />
+                </div>
+                </div>
+                </div>
+                </div>
+
+        <nav class="mobile-nav">
+          <a href="#home">خانه</a>
+          <a href="#pricing">تعرفه ها</a>
+          <a href="#hotels">هتل‌ها</a>
+          <a href="#partners">شرکای تجاری</a>
+          <a href="#education">پایگاه آموزش</a>
+          <hr />
+          <a href="#contact">تماس با ما</a>
+          <a href="#about">درباره ما</a>
+          <a href="#faq">سوالات متداول</a>
           <button class="demo-btn demo-btn--mobile">دریافت نسخه دمو</button>
-          </nav>
-    </header>
+        </nav>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero__content">
-        <div class="hero__text">
-          <nav class="pricing-header__breadcrumb">
-            <a href="/" class="pricing-header__breadcrumb-item">
-              <span class="pricing-header__breadcrumb-icon">
-                <img src="../images/home.svg" alt="home icon" />
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero__content">
+          <div class="hero__text">
+            <nav class="pricing-header__breadcrumb">
+              <a href="/" class="pricing-header__breadcrumb-item">
+                <span class="pricing-header__breadcrumb-icon">
+                  <img
+                    src="../images/home.svg"
+                    alt="home icon"
+                    style="height: 100%" />
+                  </span>
+                  <span class="pricing-header__breadcrumb-text">خانه</span>
+                  </a>
+
+              <span class="pricing-header__breadcrumb-separator">
+                <img src="../images/chevron-left.svg" alt="separator" />
               </span>
-              <span class="pricing-header__breadcrumb-text">خانه</span>
-            </a>
 
-            <span class="pricing-header__breadcrumb-separator">
-              <img src="../images/chevron-left.svg" alt="separator" />
-            </span>
+              <a
+                href="/pricing"
+                class="pricing-header__breadcrumb-item pricing-header__breadcrumb-item--current">
+                <span class="pricing-header__breadcrumb-text">هتل ها</span>
+              </a>
+              </nav>
 
-            <a
-              href="/pricing"
-              class="pricing-header__breadcrumb-item pricing-header__breadcrumb-item--current">
-              <span class="pricing-header__breadcrumb-text">هتل ها</span>
-            </a>
-          </nav>
-
-          <div class="hero__title-section">
-            <h1 class="hero__title"> هتل‌های همکار نت‌مایندر </h1>
-            <p> هتل‌هایی که مدیریت رزرو خود را به نت‌مایندر سپرده‌اند </p>
-            <div class="btns">
-              <div class="btns__right">
-                <span class="btns__text--white">مشاهده هتل ها</span>
-              </div>
-              <div class="btns__left">
-                <span class="btns__text--blue">ارتباط با ما</span>
-              </div>
+            <div class="hero__title-section">
+              <h1 class="hero__title">هتل‌های همکار نت‌ مایندر</h1>
+              <p>هتل‌هایی که مدیریت رزرو خود را به نت‌مایندر سپرده‌اند</p>
+              <div class="btns">
+                <button class="btns__right" type="button">مشاهده هتل ها</button>
+                
+                <button class="btns__left" type="button">ارتباط با ما</button>
+                </div>
+                </div>
+                </div>
+                <div class="bg-buildings">
+            <img class="bg-building" src="../images/bg-bil.png" alt="" />
             </div>
+            </div>
+            </section>
+            </div>
+
+    <!--  -->
+    <div class="hero-container">
+      <div class="container hero-co">
+        <div class="title__second">
+          <div class="title__second--top">
+            <span class="title__second--top-blue">اعتماد شکل‌گرفته از تجربه واقعی</span>
+          </div>
+          <div class="title__second--bottom">
+            هتل‌های معرفی‌شده در این صفحه، به‌صورت فعال از نت‌مایندر برای مدیریت
+            رزروها، نرخ‌ها و کانال‌های فروش خود استفاده کرده‌اند. این همکاری‌ها
+            حاصل تجربه عملی و نتایج قابل‌اعتماد است
           </div>
         </div>
-        <div class="bg-buildings">
-          <img class="bg-building" src="../images/bg-building.png" alt="">
+        </div>
+        </div>
+        <div class="blue-container">
+          <div class="container">
+            <div class="stats__container">
+              <!-- متن سمت راست -->
+              <div class="stats__content">
+                <h2 class="stats__title">همکاری‌های واقعی، نتایج ملموس</h2>
+                <p class="stats__description">
+              هتل‌های همکار نت‌مایندر در سیستم ما، مدیریت رزرو، هماهنگی کانال‌ها
+              و بهینه‌سازی نرخ‌ها را به صورت کارآمد تجربه کرده‌اند. این آمار
+              نشان‌دهنده اعتماد و همکاری واقعی در طول سال‌هاست
+              </p>
+              </div>
+
+          <!-- ارقام سمت چپ -->
+          <div class="stats__numbers">
+            <!-- سال همکاری -->
+            <div class="stats__item">
+              <span class="stats__number">+۵</span>
+              <span class="stats__label">سال همکاری مستمر</span>
+            </div>
+
+            <!-- تعداد رزرو -->
+            <div class="stats__item">
+              <span class="stats__number">+۳۵۰,۰۰۰</span>
+              <span class="stats__label">رزرو هماهنگ‌شده</span>
+            </div>
+
+            <!-- هتل‌های همکار -->
+            <div class="stats__item">
+              <span class="stats__number">+۱۲۰</span>
+              <span class="stats__label">هتل همکار فعال</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+    <!-- مقالات مرتبط -->
+    <div class="articles">
+      <div class="articles__title">
+        <div class="articles__title--text">لیست هتل های همکار</div>
+        <div class="articles__title__box">
+          <div class="articles__title__box--active">
+            <span class="articles__title__box-text--active">همه هتل‌ها</span>
+          </div>
+          <div class="articles__title__box--notactive">
+            <span class="articles__title__box-text--notactive">5 ستاره</span>
+          </div>
+          <div class="articles__title__box--notactive">
+            <span class="articles__title__box-text--notactive">4 ستاره</span>
+          </div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <!--  -->
-  <div class="hero-container">
-    <div class="container hero-co">
-      <div class="title__second">
-        <div class="title__second--top"> <span class="title__second--top-blue">
-            <span
-              class="title__second--top-blue">اعتماد شکل‌گرفته از تجربه واقعی</span>
-        </div>
-        <div class="title__second--bottom"> هتل‌های معرفی‌شده در این صفحه، به‌صورت فعال از نت‌مایندر برای مدیریت رزروها،
-          نرخ‌ها و کانال‌های فروش خود استفاده کرده‌اند. این همکاری‌ها حاصل تجربه عملی و نتایج قابل‌اعتماد است </div>
-      </div>
-
-
-    </div>
-  </div>
-  <div class="blue-container">
-    <div class="container">
-      <div class="stats__container">
-        <!-- متن سمت راست -->
-        <div class="stats__content">
-          <h2 class="stats__title">همکاری‌های واقعی، نتایج ملموس</h2>
-          <p class="stats__description">
-            هتل‌های همکار نت‌مایندر در سیستم ما، مدیریت رزرو،
-            هماهنگی کانال‌ها و بهینه‌سازی نرخ‌ها را به صورت کارآمد تجربه کرده‌اند.
-            این آمار نشان‌دهنده اعتماد و همکاری واقعی در طول سال‌هاست
-          </p>
-        </div>
-
-        <!-- ارقام سمت چپ -->
-        <div class="stats__numbers">
-          <!-- سال همکاری -->
-          <div class="stats__item">
-            <span class="stats__number">+۵</span>
-            <span class="stats__label">سال همکاری مستمر</span>
-          </div>
-
-          <!-- تعداد رزرو -->
-          <div class="stats__item">
-            <span class="stats__number">+۳۵۰,۰۰۰</span>
-            <span class="stats__label">رزرو هماهنگ‌شده</span>
-          </div>
-
-          <!-- هتل‌های همکار -->
-          <div class="stats__item">
-            <span class="stats__number">+۱۲۰</span>
-            <span class="stats__label">هتل همکار فعال</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- مقالات مرتبط -->
-  <div class="articles">
-    <div class="articles__title">
-      <div class="articles__title--text">لیست هتل های همکار</div>
-      <div class="articles__title__box">
-        <div class="articles__title__box--active">
-          <span class="articles__title__box-text--active">همه هتل‌ها</span>
-        </div>
-        <div class="articles__title__box--notactive">
-          <span class="articles__title__box-text--notactive">5 ستاره</span>
-        </div>
-        <div class="articles__title__box--notactive">
-          <span class="articles__title__box-text--notactive">4 ستاره</span>
-        </div>
-      </div>
-    </div>
-    <div class="articles__container">
-      <div class="articles__items">
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="articles__items__column">
-          <div class="articles__items__column--img-wrapper">
-            <img src="../images/palas.png" alt="hotel"
-              class="articles__items__column--img">
-            <div class="articles__items__column--sell articles__items__column--sell--gray">
-              <img src="../images/instagram.png" alt="">
-              <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
-            </div>
-          </div>
-          <div class="articles__items__column--text">
-            <div class="contents">
-              <div class="content-logo">
-                <div class="logo">
-                  <img src="../images/palas-logo.png" alt="">
-                </div>
-                <span class="title-logo">هتل اسپیناس پلاس</span>
-              </div>
-              <div class="stars">
-                <span class="star-num">5</span>
-                <img src="../images/Star 1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="articles__items__column--subtext">هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
-            مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
-          </div>
-          <div class="articles__items__column--info">
-            <div class="articles__items__column--info-right">
-              <img src="../images/location.png" alt="location">
-              <span class="articles__items__column--info-right-text">تهران</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/calendar.svg" alt="calendar مطالعه">
-              <span class="articles__items__column--info-right-text">12 سال همکاری</span>
-            </div>
-            <div class="articles__items__column--info-right">
-              <img src="../images/buildings-2.png" alt="buildings مطالعه">
-              <span class="articles__items__column--info-right-text">24 اتاق</span>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-  <!-- CTA Banner -->
-  <section class="cta-banner">
-    <div class="container">
-      <div class="cta-banner__wrapper">
-        <div class="cta-banner__image">
-          <!-- <img src="../images/sec-1.png" alt="مدیریت رزرو هتل"> -->
-        </div>
-
-        <div class="cta-banner__content">
-          <h2 class="cta-banner__title">
-            هتل شما هم می‌تواند در این لیست باشد
-          </h2>
-          <p class="cta-banner__description">
-            شما نیز میتوانید به لیست هتل هایی که در‌حال همکاری با نت مایندر هستند بپیوندید و از خدمات ویژه‌ای بهره‌مند
-            شوید
-          </p>
-          <a href="#" class="btn btn--primary cta-banner__btn">درخواست مشاوره</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====================================================== -->
-  <!-- FOOTER -->
-  <!-- ====================================================== -->
-
-  <footer class="footer">
-    <div class="container">
-      <!-- BRAND -->
-      <div class="footer__brand">
-        <img
-          src="https://static.codia.ai/image/2025-12-14/hQ7E5xnkiS.png"
-          alt="نت‌مایندر"
-          class="footer__logo" />
-
-        <p class="footer__tagline">فروش بیشتر، مدیریت ساده‌تر، خطای صفر</p>
-      </div>
-
-      <div class="footer__content">
-        <!-- ABOUT -->
-        <div class="footer__section footer__about">
-          <h3>درباره نت‌مایندر</h3>
-
-          <p>
-            نت‌مایندر راهکارهای تخصصی برای مدیریت رزرو آنلاین هتل‌ها ارائه
-            می‌دهد.
-          </p>
-
-          <div class="footer__video-links">
-            <a href="#" class="footer__video-link"> ویدیو معرفی نت‌مایندر </a>
-
-            <a href="#" class="footer__video-link"> ویدیو نمایش نسخه دمو </a>
-          </div>
-        </div>
-
-        <!-- CENTER LINKS -->
-        <div class="footer__center">
-          <div class="footer__section">
-            <h3>همکاری‌ها</h3>
-
-            <ul>
-              <li><a href="#">همکاری با ما</a></li>
-              <li><a href="#">هتل‌ها</a></li>
-              <li><a href="#">شرکای تجاری</a></li>
-              <li><a href="#">تعرفه‌ها</a></li>
-            </ul>
-          </div>
-
-          <div class="footer__section">
-            <h3>پایگاه آموزش</h3>
-
-            <ul>
-              <li><a href="#">ویدئو آموزشی</a></li>
-              <li><a href="#">مقالات آموزشی</a></li>
-            </ul>
-          </div>
-
-          <div class="footer__section">
-            <h3>دسترسی سریع</h3>
-
-            <ul>
-              <li><a href="#">درباره ما</a></li>
-              <li><a href="#">تماس با ما</a></li>
-              <li><a href="#">سوالات متداول</a></li>
-              <li><a href="#">تعرفه‌ها</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="footer__section footer__contact">
-          <h3>راه‌های ارتباط با ما</h3>
-
-          <div class="footer__social-links">
-            <a href="#">
+      <div class="articles__container">
+        <div class="articles__items">
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
               <img
-                src="https://static.codia.ai/image/2025-12-14/ohsBtiPUnR.png"
-                alt="twitter" />
-            </a>
-
-            <a href="#">
-              <img
-                src="https://static.codia.ai/image/2025-12-14/TNGMjG6Psc.png"
-                alt="instagram" />
-            </a>
-
-            <a href="#">
-              <img
-                src="https://static.codia.ai/image/2025-12-14/S5sXNAQWsD.png"
-                alt="whatsapp" />
-            </a>
-
-            <a href="#">
-              <img
-                src="https://static.codia.ai/image/2025-12-14/D7h7kyiZSW.png"
-                alt="youtube" />
-            </a>
-          </div>
-
-          <div class="footer__newsletter">
-            <p>برای عضویت در خبرنامه، ایمیل خود را وارد کنید</p>
-
-            <div class="footer__newsletter-form">
-              <input type="email" placeholder="ایمیل خود را وارد کنید" />
-
-              <button class="btn btn--newsletter">ثبت</button>
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
             </div>
-          </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+                <div class="articles__items__column">
+                  <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
+
+          <div class="articles__items__column">
+            <div class="articles__items__column--img-wrapper">
+              <img
+                src="../images/palas.png"
+                alt="hotel"
+                class="articles__items__column--img" />
+              <div
+                class="articles__items__column--sell articles__items__column--sell--gray">
+                <img src="../images/instagram.png" alt="" />
+                <!-- <span class="articles__items__column--sell-text">مدیریت رزرو</span> -->
+              </div>
+              </div>
+              <div class="articles__items__column--text">
+                <div class="contents">
+                  <div class="content-logo">
+                    <div class="logo">
+                    <img src="../images/palas-logo.png" alt="" />
+                    </div>
+                    <span class="title-logo">هتل اسپیناس پلاس</span>
+                    </div>
+                    <div class="stars">
+                      <span class="star-num">5</span>
+                  <img src="../images/Star 1.png" alt="" />
+                  </div>
+                  </div>
+                  </div>
+            <div class="articles__items__column--subtext">
+              هتل لوکس شهری در شمال تهران با دسترسی عالی به ادارات و تجاری،
+              مناسب برای اقامت‌های کاری‌ و رویداد سازمانی
+            </div>
+            <div class="articles__items__column--info">
+              <div class="articles__items__column--info-right">
+                <img src="../images/location.png" alt="location" />
+                <span class="articles__items__column--info-right-text">تهران</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/calendar.svg" alt="calendar مطالعه" />
+                <span class="articles__items__column--info-right-text">12 سال همکاری</span>
+                </div>
+                <div class="articles__items__column--info-right">
+                <img src="../images/buildings-2.png" alt="buildings مطالعه" />
+                <span class="articles__items__column--info-right-text">24 اتاق</span>
+                </div>
+                </div>
+                </div>
         </div>
-      </div>
+        </div>
+        </div>
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+          <div class="container">
+            <div class="cta-banner__wrapper">
+              <div class="cta-banner__image">
+                <!-- <img src="../images/sec-1.png" alt="مدیریت رزرو هتل"> -->
+              </div>
 
-      <!-- COPYRIGHT -->
-      <div class="footer__bottom">
-        <p>© 2025 نت‌مایندر — تمامی حقوق این وب‌سایت محفوظ است.</p>
-      </div>
-    </div>
-  </footer>
+          <div class="cta-banner__content">
+            <h2 class="cta-banner__title">
+              هتل شما هم می‌تواند در این لیست باشد
+            </h2>
+            <p class="cta-banner__description">
+              شما نیز میتوانید به لیست هتل هایی که در‌حال همکاری با نت مایندر
+              هستند بپیوندید و از خدمات ویژه‌ای بهره‌مند شوید
+              </p>
+            <a href="#" class="btn btn--primary cta-banner__btn">درخواست مشاوره</a>
+            </div>
+            </div>
+            </div>
+            </section>
 
-  <!-- ====================================================== -->
-  <!-- SCRIPTS -->
-  <!-- ====================================================== -->
+    <!-- ====================================================== -->
+    <!-- FOOTER -->
+    <!-- ====================================================== -->
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../scripts/main.js"></script>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <!-- BRAND -->
+        <div class="footer__brand">
+          <img
+            src="https://static.codia.ai/image/2025-12-14/hQ7E5xnkiS.png"
+            alt="نت‌مایندر"
+            class="footer__logo" />
 
+          <p class="footer__tagline">فروش بیشتر، مدیریت ساده‌تر، خطای صفر</p>
+          </div>
+
+        <div class="footer__content">
+          <!-- ABOUT -->
+          <div class="footer__section footer__about">
+            <h3>درباره نت‌مایندر</h3>
+
+            <p>
+              نت‌مایندر راهکارهای تخصصی برای مدیریت رزرو آنلاین هتل‌ها ارائه
+              می‌دهد.
+            </p>
+
+            <div class="footer__video-links">
+              <a href="#" class="footer__video-link"> ویدیو معرفی نت‌مایندر </a>
+
+              <a href="#" class="footer__video-link"> ویدیو نمایش نسخه دمو </a>
+              </div>
+              </div>
+
+          <!-- CENTER LINKS -->
+          <div class="footer__center">
+            <div class="footer__section">
+              <h3>همکاری‌ها</h3>
+
+              <ul>
+                <li><a href="#">همکاری با ما</a></li>
+                <li><a href="#">هتل‌ها</a></li>
+                <li><a href="#">شرکای تجاری</a></li>
+                <li><a href="#">تعرفه‌ها</a></li>
+              </ul>
+              </div>
+
+            <div class="footer__section">
+              <h3>پایگاه آموزش</h3>
+
+              <ul>
+                <li><a href="#">ویدئو آموزشی</a></li>
+                <li><a href="#">مقالات آموزشی</a></li>
+              </ul>
+              </div>
+
+            <div class="footer__section">
+              <h3>دسترسی سریع</h3>
+
+              <ul>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#">سوالات متداول</a></li>
+                <li><a href="#">تعرفه‌ها</a></li>
+              </ul>
+              </div>
+              </div>
+
+          <!-- CONTACT -->
+          <div class="footer__section footer__contact">
+            <h3>راه‌های ارتباط با ما</h3>
+
+            <div class="footer__social-links">
+              <a href="#">
+                <img
+                  src="https://static.codia.ai/image/2025-12-14/ohsBtiPUnR.png"
+                  alt="twitter" />
+              </a>
+
+              <a href="#">
+                <img
+                  src="https://static.codia.ai/image/2025-12-14/TNGMjG6Psc.png"
+                  alt="instagram" />
+              </a>
+
+              <a href="#">
+                <img
+                  src="https://static.codia.ai/image/2025-12-14/S5sXNAQWsD.png"
+                  alt="whatsapp" />
+              </a>
+
+              <a href="#">
+                <img
+                  src="https://static.codia.ai/image/2025-12-14/D7h7kyiZSW.png"
+                  alt="youtube" />
+              </a>
+              </div>
+
+            <div class="footer__newsletter">
+              <p>برای عضویت در خبرنامه، ایمیل خود را وارد کنید</p>
+
+              <div class="footer__newsletter-form">
+                <input type="email" placeholder="ایمیل خود را وارد کنید" />
+
+                <button class="btn btn--newsletter">ثبت</button>
+                </div>
+                </div>
+                </div>
+                </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer__bottom">
+          <p>© 2025 نت‌مایندر — تمامی حقوق این وب‌سایت محفوظ است.</p>
+        </div>
+        </div>
+        </footer>
+
+    <!-- ====================================================== -->
+    <!-- SCRIPTS -->
+    <!-- ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+    </body>
 </html>

@@ -832,7 +832,7 @@ textarea:not([rows]) {
   position: relative;
 }
 .header__top {
-  background: #fff;
+  background: none;
   border-bottom: 1px solid var(--gray-200);
   padding: 8px 0;
 }
@@ -858,6 +858,7 @@ textarea:not([rows]) {
 }
 .header__main {
   padding: 16px 0;
+  padding-bottom: 0px;
 }
 .header__main-content {
   display: flex;
@@ -906,7 +907,7 @@ textarea:not([rows]) {
 ================================ */
 .hero {
   padding: 37px 0;
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: center;
   background: url(../../images/bg-hand.png) center;
   background-repeat: no-repeat;
@@ -992,7 +993,7 @@ textarea:not([rows]) {
    ABOUT SECTION
 ================================ */
 .about-section {
-  padding-top: 80px;
+  padding-top: 0px;
 }
 .about-section__wrapper {
   display: flex;
@@ -1031,9 +1032,8 @@ textarea:not([rows]) {
   align-items: center;
   text-align: center;
   gap: 8px;
-  margin-top: 44px;
   margin-bottom: 44px;
-  margin-top: 84px;
+  margin-top: 120px;
   z-index: 222;
 }
 .title__second--top {
@@ -1266,6 +1266,7 @@ textarea:not([rows]) {
 
 .header__main {
   padding: 16px 0;
+  padding-bottom: 0;
 }
 
 .header-background {

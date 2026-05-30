@@ -865,9 +865,9 @@ textarea:not([rows]) {
   top: 0;
   right: 0;
   content: " ";
-  background: linear-gradient(90deg, #ffffff 0%, rgba(239, 244, 249, 0.6) 20%, transparent 50%, rgba(239, 244, 249, 0.6) 80%, #ffffff 100%);
+  background: none;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 .hero--about {
   background: url("../public/About-Us-Page@3x.png") center/cover no-repeat;
@@ -960,8 +960,7 @@ textarea:not([rows]) {
   gap: 8px;
   border-radius: 16px;
   border-width: 2px;
-  margin: 100px auto;
-  margin-bottom: 50px;
+  margin: 100px auto !important;
 }
 @media (max-width: 688px) {
   .book {
@@ -1154,6 +1153,7 @@ textarea:not([rows]) {
   text-align: right;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 24px;
@@ -1169,6 +1169,7 @@ textarea:not([rows]) {
   text-align: right;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 50px;
@@ -1253,6 +1254,7 @@ textarea:not([rows]) {
   line-height: 150%;
   text-align: right;
   color: #1f2937;
+  align-items: center;
 }
 
 .articles__container {
@@ -1289,22 +1291,26 @@ textarea:not([rows]) {
      object-fit: cover;
   display: block;
 }
+.articles__items__column--img img {
+  max-height: 211px;
+}
 
-.articles__items__column--sell {
+.articles__items__column--sell .articles__items__column--sell {
   position: absolute;
-  top: 12px;
-  width: 97px;
-  height: 32px;
-  border-radius: 8px;
-  padding: 0 12px;
-  backdrop-filter: blur(8px);
-  border: 1.6px solid #1622a2;
-  background: rgba(191, 202, 243, 0.85);
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
+  top: 19px;
+  left: 19px;
+  padding: 0 8px;
+  border: 1.6px solid #1622a2;
+  border-radius: 8px;
+  background: rgba(191, 202, 243, 0.85);
+  backdrop-filter: blur(4px);
   z-index: 2;
-  left: 10px;
 }
 
 .articles__items__column--sell-text {
@@ -1325,6 +1331,7 @@ textarea:not([rows]) {
   text-align: right;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 24px;
@@ -1340,6 +1347,7 @@ textarea:not([rows]) {
   text-align: right;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   height: 50px;
@@ -1462,12 +1470,14 @@ textarea:not([rows]) {
 
 .hero {
   position: relative;
-  min-height: 690px;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-top: 170px;
+  padding-bottom: 0;
 }
 .hero__bg {
   position: absolute;
@@ -1489,14 +1499,13 @@ textarea:not([rows]) {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-block: 214px;
   justify-content: center;
 }
 .hero__text {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 16px;
 }
 .hero__title-section {
   display: flex;
@@ -1511,7 +1520,7 @@ textarea:not([rows]) {
 }
 .hero__title {
   font-size: 48px;
-  line-height: 72px;
+  line-height: 150%;
   font-weight: 700;
   color: #232c39;
   margin: 0;

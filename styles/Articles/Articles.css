@@ -1939,4 +1939,69 @@ textarea:not([rows]) {
 
 .header__main {
   padding: 16px 0;
+}
+
+.hero {
+  position: relative;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 140px;
+  padding-bottom: 0;
+}
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.hero__title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero__subtitle {
+  color: #088bcc;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.hero__title {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #232c39;
+  margin: 0;
+  max-width: 771px;
+}
+.hero__description {
+  font-size: 16px;
+  line-height: 28.8px;
+  font-weight: 500;
+  color: #4b5563;
+}
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+.hero__buttons button {
+  width: 180px;
 }/*# sourceMappingURL=Articles.css.map */
