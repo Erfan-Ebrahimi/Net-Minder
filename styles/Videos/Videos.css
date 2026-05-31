@@ -1161,4 +1161,12 @@ textarea:not([rows]) {
 
 .header__main {
   padding: 16px 0;
+}
+
+.header__phone-icon {
+  transform: rotate(90deg);
+}
+
+.header__nav {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=Videos.css.map */

@@ -1290,4 +1290,17 @@ textarea:not([rows]) {
   z-index: 1000;
   background: none;
   transition: all 0.3s ease-in-out;
+}
+
+.header__phone-icon {
+  transform: rotate(90deg);
+}
+
+.header__nav {
+  flex-direction: row-reverse;
+  gap: 56px;
+}
+
+.header__nav a {
+  font-size: 1rem;
 }/*# sourceMappingURL=Partners.css.map */

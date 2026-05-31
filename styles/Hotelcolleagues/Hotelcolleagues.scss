@@ -1161,3 +1161,13 @@
 .header__top {
   border-bottom: 1px solid rgba(156, 163, 175, 0.1607843137);
 }
+.header__phone-icon{
+  transform: rotate(90deg);
+}
+.header__nav{
+  flex-direction: row-reverse;
+  gap: 56px;
+}
+.header__nav a{
+font-size: 1rem;
+}

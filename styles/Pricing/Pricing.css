@@ -1589,4 +1589,11 @@ textarea:not([rows]) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+.header__phone-icon {
+  transform: rotate(90deg);
+}
+
+.header__nav {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=Pricing.css.map */

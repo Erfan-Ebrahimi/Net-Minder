@@ -126,10 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 3,
         spaceBetween: 20,
         loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         breakpoints: {
           320: { slidesPerView: 2, spaceBetween: 15 },
           480: { slidesPerView: 3, spaceBetween: 20 },

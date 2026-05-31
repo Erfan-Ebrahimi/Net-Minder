@@ -865,7 +865,7 @@ textarea:not([rows]) {
 }
 .header__nav {
   display: flex;
-  gap: 24px;
+  gap: 56px;
 }
 .header__nav a {
   color: var(--gray-700);
@@ -1494,4 +1494,16 @@ textarea:not([rows]) {
   z-index: 1000;
   background: none;
   transition: all 0.3s ease-in-out;
+}
+
+.header__phone-icon {
+  transform: rotate(90deg);
+}
+
+.header__nav {
+  flex-direction: row-reverse;
+}
+
+.header__nav a {
+  font-size: 16px;
 }/*# sourceMappingURL=Contactus.css.map */
